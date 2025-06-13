@@ -360,7 +360,6 @@ nav ul li a:hover {
     transform: scale(1.079);
     transform-origin: top left;
     z-index: 1;
-    pointer-events: none;
 }
 
 .nameContainer {

@@ -85,6 +85,16 @@ if (mybutton) {
    END OF SCROLL TO TOP SECTION
    ==================== */
 
+const iframe = document.querySelector('.spline');
+document.addEventListener('mousemove', (e) => {
+  // If mouse is at top half or corner, enable interaction
+  if (e.clientY < 200) {
+    iframe.style.pointerEvents = 'auto';
+  } else {
+    iframe.style.pointerEvents = 'none';
+  }
+});
+
 /* ====================
     START OF TYPED.JS ANIMATION SECTION
     ==================== */

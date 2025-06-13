@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Web Page</title>
+        <link rel="stylesheet" href="./Assets/css/style.css">
+        <script src="./Assets/js/main.js" defer></script>
+
+        <!-- Your Typed.js CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+        <!--Boxicon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"/>
+
+        <!--AOS link-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body>
+        <main>
+            <section class="HeaderContainer autoBlur">
+                <!-- Header Section -->
+                <header>
+                    <!-- Logo and Menu Icon -->
+                    <div class="logo">
+                        <a href="index.html">DO</a>
+                    </div>
+
+                    <div>
+                        <i class='bx bx-menu-alt-right menuIc' aria-label="Open menu" role="button" tabindex="0"></i>
+                    </div>
+
+                    <!-- Navigation Menu -->
+                    <div class="navContainer">
+                        <span aria-label="Close menu" role="button" tabindex="0" class="closeIc">x</span>
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="contact.html">contact</a></li>
+                                <li><a href="service.html">services</a></li>
+                                <li><a href="portfolio.html">portfolio</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+
+                <!--Services Header-->
+                <article class="serviceHeader">
+                    <div>
+                        <h2>services</h2>
+                    </div>
+                </article>
+
+                <section class="previewLayout">
+                    <div class="innerPreview">
+                        <div class="preview  Myfirst">
+                            <div class="prOneBck"></div>
+                            <!--Preview one Layout-->
+                            <div class="previewOneNav" style="z-index: 10;">
+                                <!--Logo-->
+                                <div class="prOneLogo">
+                                    <h2>preview <span>one</span></h2>
+                                </div>
+                                
+                                <nav style="z-index: 10;">
+                                    <ul >
+                                        <li>Home</li>
+                                        <li>Booking</li>
+                                        <li>Contact</li>
+                                    </ul>
+                                </nav>
+
+                                <!--Header Shop-->
+                                <section class="previewOneHeader">
+                                    <div>
+                                        <h2>Day to Day Shop</h2>
+                                    </div>
+                                </section>
+                            </div>
+                        
+
+                            <!--PrevPictures-->
+                            <section class="previewOnePictures">
+                                <div class="previewOnePic" >
+
+                                    <!--Booking Side Images-->
+                                    <div class="firstDiv" style="z-index: 10;">
+                                        <!--Image One-->
+                                        <div>
+                                            <img src="./Service_assets/Layout_One/First/nailtech.jpg" alt="">
+                                            <article>
+                                                <button>Book</button>
+                                            </article>
+                                        </div>
+
+                                        <!--Image Two-->
+                                        <div>
+                                            <img src="./Service_assets/Layout_One/First/HairStylist.jpg" alt="">
+                                            <article>
+                                                <button>Book</button>
+                                            </article>
+                                        </div>
+
+                                        <!--Image Three-->
+                                        <div>
+                                            <img src="./Service_assets/Layout_One/First/EyelashStylist.jpg" alt="">
+                                            <article>
+                                                <button>Book</button>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    
+                                    <!--Flex Preset of Images /Trailer-->
+                                    <div class="secondDiv" style="z-index: 10;">
+                                        <!--Trailer Showcase -->
+                                        <div class="tp">
+                                            <!--Trailer One-->
+                                            <div class="hover-video" onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
+                                                <img src="./Service_assets/Second/WatchTrailer.jpg" alt="Nail Tech Video" class="preview-img">
+                                                <video class="preview-vid" muted loop preload="none">
+                                                    <source src="./Service_assets/Second/videos_Trailer/Nailtechtrailer.mp4" type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                                <article>
+                                                    <p>Here's a trailer</p>
+                                                </article>
+                                            </div>
+
+                                            <!--Trailer Two-->
+                                            <div class="hover-video"  onmouseenter="playVideo(this)" onmouseleave="pauseVideo(this)">
+                                                <img src="./Service_assets/Second/HairstylistPrev.jpg" alt="Hair Stylist Video" class="preview-img">
+                                                <video class="preview-vid" muted loop preload="none">
+                                                    <source src="./Service_assets/Second/videos_Trailer/HairStylist.mp4" type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                                <article>
+                                                    <p>Here's a trailer</p>
+                                                </article>
+                                            </div>
+                                        </div>
+
+                                        <!--Hair Style Showcase -->
+                                        <div class="mdd">
+                                            <!--Image One-->
+                                            <div>
+                                                <img src="./Service_assets/Layout_One/Third/HairStyleOne.jpg" alt="">
+                                                <article>
+                                                    <p>style made by person a</p>
+                                                </article>
+                                            </div>
+
+                                            <!--Image Two-->
+                                            <div>
+                                                <img src="./Service_assets/Layout_One/Third/HairStyleThree.jpg" alt="">
+                                                <article>
+                                                    <p>style made by person b</p>
+                                                </article>
+                                            </div>
+
+                                            <!--Image Three-->
+                                            <div>
+                                                <img src="./Service_assets/Layout_One/Third/HairStyleTwo.jpg" alt="">
+                                                <article>
+                                                    <p>style made by person c</p>
+                                                </article>
+                                            </div>
+                                        </div>
+
+                                        <!--Nail tech Showcase-->
+                                        <div class="btm">
+                                            <!--Nail Tech One-->
+                                            <div>
+                                                <img src="./Service_assets/Layout_One/Fourth/NailTechOne.jpg" alt="">
+                                                <article>
+                                                    <p>made by h.p</p>
+                                                </article>
+                                            </div>
+
+                                            <!--Nail Tech Two-->
+                                            <div>
+                                                <img src="./Service_assets/Layout_One/Fourth/NailTechTwo.jpg" alt="">
+                                                <article>
+                                                    <p>made by h.p</p>
+                                                </article>
+                                            </div>
+
+                                            <!--Nail Tech Three-->
+                                            <div>
+                                                <img src="./Service_assets/Layout_One/Fourth/NailTechThree.jpg" alt="">
+                                                <article>
+                                                    <p>made by h.p</p>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!--Preview Two Layout-->
+                        <div class="preview  Mysecond" style="display: none;">
+                            <div class="prTwobar">
+                                <div class="container nav-container">
+                                    <input class="checkbox" type="checkbox" name="" id="" />
+                                    <div class="hamburger-lines">
+                                    <span class="line line1"></span>
+                                    <span class="line line2"></span>
+                                    <span class="line line3"></span>
+                                </div>
+                                <div class="logos">
+                                    <img src="./Service_assets/Layout_Two/logo/L.png" alt="LOGO">
+                                </div>
+                                <div class="menu-items">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">about</a></li>
+                                    <li><a href="#">blogs</a></li>
+                                    <li><a href="#">portfolio</a></li>
+                                    <li><a href="#">contact</a></li>
+                                </div>
+                                </div>
+                            </div>
+
+                            <!--Landing Page-->
+                            <section class="LandingF">
+                                <div class="heaCont">
+                                    <!--Header And Paragraph-->
+                                    <h1>welcome to the future</h1>
+                                    <p>ai is here and is moving fast</p>
+
+                                    <!--Image Side Content-->
+                                    <div class="hover-img">
+                                        <!--Image One-->
+                                        <div class="glass min glass-bg">
+                                            <img src="./Service_assets/Layout_Two/smaller_image/Future.jpg" alt="">
+                                        </div>
+
+                                        <!--Image Two-->
+                                        <div class="glass yin glass-bg">
+                                            <img src="./Service_assets/Layout_Two/smaller_image/Ishere.jpg" alt="">
+                                        </div>
+
+                                        <!--Image Three-->
+                                        <div class="glass lin glass-bg">
+                                            <img src="./Service_assets/Layout_Two/smaller_image/Possibilities.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Centerized Button-->
+                                <div class="buttonCont">
+                                    <button>dive in</button>
+                                </div>
+
+                                <!--Bottom Span Content-->
+                                <div class="hpCont">
+                                    <span>introduction</span>
+                                    <span>what is here</span>
+                                    <span>what is next</span>
+                                </div>
+                            </section>
+                        </div>
+
+                        <!--Preview Three Layout-->
+                        <div class="preview  Mythird" style="display: none;"></div>
+
+                        <!--Preview Four Layout-->
+                        <div></div>
+
+                        <!--Preview Five Layout-->
+                        <div></div>
+
+                        <!--Preview Six Layout-->
+                        <div></div>
+                    </div>
+
+
+                    <section class="serviceBox">
+                        <!--Arrows-->
+                        <div class="arrowContainers">
+                            <button id="left">
+                                <i class="fa-solid fa-arrow-left" ></i>
+                            </button>
+                            <button id="right">
+                                <i class="fa-solid fa-arrow-right" ></i>
+                            </button>
+                        </div>
+
+                        <!--Container-->
+                        <div class="templateContainer glass-bg">
+                            <div class="tempInner" id="slider">
+                                <div class="template" ></div>
+                                <div class="template" ></div>
+                                <div class="template" ></div>
+                                <div class="template" ></div>
+                                <div class="template" ></div>
+                                <div class="template" ></div>
+                                <div class="template" ></div>
+                                <div class="template" ></div>
+                                <div class="template" ></div>
+
+
+                                <div class="template" ></div>
+                                <div class="template" ></div>
+                                <div class="template" ></div>
+                                <div class="template" ></div>
+                                <div class="template" ></div>
+                                <div class="template" ></div>
+                                <div class="template" ></div>
+                                <div class="template" ></div>
+                                <div class="template" ></div>
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+
+            <!--Side article logo-->
+            <div class="sideBox">
+                <div class="socialContainer">
+                    <a href="" class="fa-brands fa-facebook-f"><span>facebook</span></a>
+                    <a href="https://x.com/WebDev_D0" target="_blank" class="fa-brands fa-x-twitter"><span>&Xopf;</span></a>
+                    <a href="https://www.instagram.com/webdev_do/" target="_blank" class="fa-brands fa-instagram"><span>instagram</span></a>
+                    <a href="" class="fa-brands fa-linkedin-in"><span>linkden</span></a>
+                    <a href="mailto:okohdaniel66@gmail.com" class="fa fa-envelope"><span>mail</span></a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Aos.js Initialization -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

@@ -295,7 +295,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: clamp(2rem, 8vw, 100px);
+    font-size: clamp(2rem, 8vw, 30px);
     text-transform: capitalize;
     position: relative;
 }
@@ -885,9 +885,6 @@ START OF SKILLS SECTION
     position: relative;
     top: 400px;
 }
-
-
-
 
 
 /*Skill Container style*/
@@ -2823,21 +2820,66 @@ aside p {
     Start of Media Queries
     ==================== */
 /* Small Desktop (max-width: 1200px) */
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
+
+    /* ==================
+        Homepage Css
+        =================*/
+
+    /* menu and nav & top spline with info*/
+
+    .menuIc {
+        position: absolute;
+        right: 30px;
+    }
+    .spline {
+        transform: scale(1.089);
+    }
+    .nameContainer h1 {
+        font-size: 29px;
+    }
+
+    /*Para*/
+    .mainArticle article {
+        left: 5%;
+    }
     .mainArticle article p {
-        font-size: 32px;
+        font-size: 25px;
+    }
+    .mainArticle article p span {
+        font-size: 30px;
+    }
+
+    /* ProjectHover Container*/
+    .projectHeader div {
+        position: relative;
+        left: 1%;
+        bottom: -130px;
+        width: 55%;
     }
     .projectHeader div h2 {
         font-size: 40px;
         width: 40%;
     }
+    .projectsContainer {
+        top: 130px;
+    }
     .projectsContainer, .portfolioContainer {
         height: auto;
     }
     .projectInner, .borderPortfolio, .card__content {
-        width: 90vw;
-        max-width: 600px;
+        width: 60vw;
+        max-width: 300px;
         min-width: 250px;
+    }
+
+    /* Skills Container*/
+    .skillsContainer  p{ 
+        font-size: 26px;
+    }
+    .skillsContainer .mask {
+        bottom: 30px;
+        left: 3.8%;
     }
 }
 

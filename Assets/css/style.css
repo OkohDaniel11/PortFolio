@@ -2851,6 +2851,10 @@ aside p {
     }
 
     /* ProjectHover Container*/
+    .projectHeader{ 
+        position: relative;
+        z-index: 120;
+    }
     .projectHeader div {
         position: relative;
         left: 1%;
@@ -2874,12 +2878,23 @@ aside p {
     }
 
     /* Skills Container*/
+    .MainFooter {
+        position: relative;
+    }
+    .skillsFlex {
+        z-index: 40;
+    }
     .skillsContainer  p{ 
         font-size: 26px;
     }
     .skillsContainer .mask {
         bottom: 30px;
         left: 3.8%;
+    }
+
+    /*Footer Content*/
+    .contactContainer div h2{
+        font-size: 22px;
     }
 }
 

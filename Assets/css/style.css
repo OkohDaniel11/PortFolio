@@ -1514,6 +1514,7 @@ footer span {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 30px;
 }
 
 /*form style*/
@@ -1873,12 +1874,12 @@ footer span {
     object-fit: cover;
 }
 
-h2 {
+.card__text h2 {
     font-weight: 300;
     font-size: 2.8em;
 }
 
-p {
+.card__text p {
     font-family: 'Panchang', sans-serif;
     font-weight: 300;
     line-height: 1.42;
@@ -2871,7 +2872,7 @@ aside p {
     .projectsContainer, .portfolioContainer {
         height: auto;
     }
-    .projectInner, .borderPortfolio, .card__content {
+    .projectInner {
         width: 60vw;
         max-width: 300px;
         min-width: 250px;
@@ -2896,6 +2897,92 @@ aside p {
     .contactContainer div h2{
         font-size: 22px;
     }
+    
+    /*===================
+        End of Homepage Css
+        ==================*/
+    
+    /*===================
+        Start of Contact Page Section
+        ==================*/
+
+    /*Header Content*/
+    .Contactheader h1, .Contactheader .one {
+        font: 40px 'Panchang';
+        font-weight: 100;
+    }
+    .Contactheader h1 {
+        top: 240px;
+    }
+    .Contactheader .reflect {
+        top: 245px;
+    }
+    .Contactheader .bottomHeader {
+        top: 190px;
+        width: 80%;
+        left: 10%;
+    }
+    .Contactheader p {
+        text-align: justify;
+    }
+
+    /*Grid and form Content*/
+    .gridContactContainer {
+        display: grid;
+        gap: 0%;
+        padding: 0;
+    }
+    .contactInnerFlex {
+        width: 400px;
+        height: 100px;
+    }
+
+    /*Icon and text style*/
+    .contactIcon {
+        height: 50px;
+        width: 50px;
+        font-size: 40px;
+    }
+
+    /*text style*/
+    .contactText {
+        padding: 10px;
+    }
+    .contactText h2 {
+        font: 25px 'Panchang';
+        top: 10px;
+    }
+    .contactText p {
+        font: 12px 'Panchang';
+    }
+    /*===================
+        End of Contact Page Css
+        ==================*/
+    
+    /*===================
+        Start of Projects Page Css
+        ==================*/
+
+    .portfolioHeader {
+        top: 250px;
+    }
+    .portfolioHeader div h2 {
+        font: 60px 'Panchang';
+        font-weight: 100;
+    }
+    .two {
+        bottom: 80px
+    }
+
+    .proje {
+        width: 100%;
+    }
+    .card__content {
+        width: 90vw;
+    }
+    /*===================
+        End of Projects Page Css
+        ==================*/
 }
 
 /* Tablet (max-width: 900px) */

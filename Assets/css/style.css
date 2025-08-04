@@ -2963,6 +2963,7 @@ aside p {
         Start of Projects Page Css
         ==================*/
 
+    /*Portfolio Header*/
     .portfolioHeader {
         top: 250px;
     }
@@ -2974,11 +2975,26 @@ aside p {
         bottom: 80px
     }
 
+    /*Card Containers*/
     .proje {
         width: 100%;
     }
     .card__content {
         width: 90vw;
+    }
+
+    /*Inner Text Container*/
+    .card__text h2 {
+        font-weight: 600;
+        font-size: 30px;
+    }
+    .card__text p {
+        font-size: 20px
+    }
+    .bottomSpan {
+        position: absolute;
+        top: 3%;
+        left: 38%;
     }
     /*===================
         End of Projects Page Css
@@ -3012,11 +3028,15 @@ aside p {
 }
 
 /* Mobile Phones (max-width: 600px) */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .HeaderContainer, .BannerSection, .mainArticle, .footerSection {
         padding: 0 5px;
-        width: 100vw;
+        width: 92vw;
         min-width: 0;
+        overflow: hidden;
+    }
+    .spline {
+        width: 100%;
     }
     .mainArticle article p {
         font-size: 16px;

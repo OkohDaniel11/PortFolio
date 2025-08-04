@@ -45,6 +45,10 @@ window.addEventListener("load", function () {
 END OF LOADER SECTION
 ==================== */
 
+/* ====================
+Start OF Nav Menu SECTION
+==================== */
+
 const menuIcon = document.querySelector('.menuIc');
 const closeIcon = document.querySelector('.closeIc');
 const navContainer = document.querySelector('.navContainer');
@@ -60,8 +64,19 @@ closeIcon.addEventListener('click', () => {
     navContainer.classList.remove('active');
     closeIcon.style.display = 'none';
     menuIcon.style.display = 'block';
-      document.body.classList.remove('no-scroll'); // allow scroll again
+    document.body.classList.remove('no-scroll'); // allow scroll again
 });
+
+navContainer.addEventListener('click', () => {
+    navContainer.classList.remove('active');
+    closeIcon.style.display = 'none';
+    menuIcon.style.display = 'block';
+    document.body.classList.remove('no-scroll'); // allow scroll again
+});
+
+/* ====================
+End OF Nav Menu SECTION
+==================== */
 
 /* ====================
    START OF SCROLL TO TOP SECTION
